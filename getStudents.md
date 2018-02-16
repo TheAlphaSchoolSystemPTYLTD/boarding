@@ -120,7 +120,7 @@
 * **Sample GET:** (With URL Encoded `token`)
 
   ```HTML
-    http://api.tasscloud.com.au/tassweb/api/?method=GetStudents&appcode=DEMOOE&company=10&token=THgDmy%2F7dWxUqvyAgjHHeg%3D%3D
+    http://api.tasscloud.com.au/tassweb/api/?method=GetStudents&appcode=DEMOB&company=10&token=THgDmy%2F7dWxUqvyAgjHHeg%3D%3D
   ```
   
 * **Sample POST:**
