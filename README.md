@@ -1,2 +1,6 @@
 # boarding
-Boarding
+Boarding API
+
+**Methods**
+
+  * getStudents
