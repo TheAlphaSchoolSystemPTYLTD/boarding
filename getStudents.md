@@ -44,7 +44,7 @@
             mobile2: "0412016535 (test)",
             town_suburb: "CHERMSIDE WEST",
             address_description: "Correspondence",
-            phone: "3366 2541 Mobile: 015 667 8349",
+            phone: "07 3366 2541",
             parent_name2: "",
             email: "erd@dre.com",
             work_phone: "848 2256",
