@@ -30,9 +30,11 @@
 
    `studcode [string]` - Student Code for retrieving a specified single student record
 
+   `includephoto [boolean]` - Must be 'true' or 'false' for whether returning student photo.
+
    **Conditional:**
 
-   none
+   `thumbnail [boolean]` - Must be 'true' or 'false' for whether returning student thumbnail photo, when includephoto = 'true'.
 
 * **Success Response:**
 
@@ -109,6 +111,16 @@
     `commtype` not supplied
     ```javascript
       "__msg": "'commtype' IS REQUIRED"
+    ```
+
+    `includephoto` not a valid boolean
+    ```javascript
+      "__msg": "'includephoto' IS NOT A VALID BOOLEAN"
+    ```
+
+    `thumbnail` not a valid boolean when includephoto = 'true'
+    ```javascript
+      "__msg": "'thumbnail' IS NOT A VALID BOOLEAN"
     ```
     
 * **Sample Parameters:**
