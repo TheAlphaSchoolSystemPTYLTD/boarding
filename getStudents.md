@@ -8,6 +8,10 @@
   
 * **Version History:**
 
+  New Property `email2` added in Version 51.4 (PR4).
+  
+* **Version History:**
+
   New properties `includephoto` and `thumbnail` added in Version 51.4.
 
 * **Method:**
@@ -53,6 +57,7 @@
             phone: "07 3366 2541",
             parent_name2: "",
             email: "erd@dre.com",
+            email2: "erd2@dre.com",
             work_phone: "848 2256",
             state_code: "QLD",
             mother_name: "Joan Angus",
@@ -77,6 +82,7 @@
             phone: "3366 2541 Mobile: 015 667 8349",
             parent_name2: "",
             email: "",
+            email2: "",
             work_phone: "848 2256",
             state_code: "QLD",
             mother_name: "Joan Angus",
