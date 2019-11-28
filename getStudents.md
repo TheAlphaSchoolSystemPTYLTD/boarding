@@ -1,14 +1,18 @@
 **getStudents**
 ----
   Returns an array of structured boarding student data in JSON format.
+  
+* **Version History:**
+
+  TASS v51.4 - Add two new properties `includephoto` and `thumbnail`.
+
+  TASS v51.4 (PR4) - Add new Property `email2`.
+
+  TASS v52.0 - Return 3 new fields `preferred_surname`, `first_name`, `other_name` for each student. Return 16 new fields `m_description`, `m_title`, `m_initials`, `m_surname`, `m_first_name`, `m_other_name`, `m_preferred_name`, `m_suffix`, `f_description`, `f_title`, `f_initials`, `f_surname`, `f_first_name`, `f_other_name`, `f_preferred_name`, `f_suffix` for parent1 & parent2 per contact.
 
 * **Version:**
 
   1
-  
-* **Version History:**
-
-  New properties `includephoto` and `thumbnail` added in Version 51.4.
 
 * **Method:**
 
@@ -43,69 +47,139 @@
 * **Success Response:**
 
     ```javascript
-    students: [
+    "students": [
       {
-        contacts: [
+        "contacts": [
           {
-            mobile2: "0412016535 (test)",
-            town_suburb: "CHERMSIDE WEST",
-            address_description: "Correspondence",
-            phone: "07 3366 2541",
-            parent_name2: "",
-            email: "erd@dre.com",
-            work_phone: "848 2256",
-            state_code: "QLD",
-            mother_name: "Joan Angus",
-            parent_code: "000011",
-            address_number: 1,
-            country: "",
-            salutation: "Ms Angus",
-            parent_name: "Ms. J. Angus",
-            family_name: "Angus",
-            post_code: 4032,
-            relationship: "",
-            father_name: "Ronald Angus",
-            mobile1: "0413443655 (sumlog)",
-            address1: "Correspondence Address",
-            address3: "",
-            address2: "PO Box 3088"
+            "mobile2": "0412016500",
+            "town_suburb": "ALBION",
+            "parent1": {
+                "initials": "P",
+                "suffix": "suf",
+                "surname": "Clark",
+                "description": "Mother/Parent 1",
+                "preferred_name": "Paula",
+                "other_name": "PauOth",
+                "title": "Mrs",
+                "first_name": "Paula"
+            },
+            "phone": "3870 9987",
+            "parent_name2": "",
+            "parent2": {
+                "initials": "E",
+                "suffix": "",
+                "surname": "Clark",
+                "description": "Father/Parent 2",
+                "preferred_name": "Edward",
+                "other_name": "",
+                "title": "",
+                "first_name": "Edward"
+            },
+            "email": "t.sloman84@gmail.com",
+            "mother_name": "Paula Clark",
+            "country": "AUSTRALIA",
+            "salutation": "Mr and Mrs Clark",
+            "parent_name": "Mrs E Clark PNE",
+            "family_name": "Clark",
+            "post_code": 4005,
+            "father_name": "Edward Clark",
+            "mobile1": "0427203657",
+            "address1": "",
+            "address3": "Addr Line 3",
+            "address2": "123 Smith Rd",
+            "address_description": "Correspondence",
+            "email2": "fang.guo@tassweb.com",
+            "work_phone": "3201 1302",
+            "state_code": "QLD",
+            "parent_code": "000055",
+            "address_number": 1,
+            "relationship": ""
           },
           {
-            mobile2: "",
-            town_suburb: "KEDRON",
-            address_description: "Billing",
-            phone: "3366 2541 Mobile: 015 667 8349",
-            parent_name2: "",
-            email: "",
-            work_phone: "848 2256",
-            state_code: "QLD",
-            mother_name: "Joan Angus",
-            parent_code: "000011",
-            address_number: 3,
-            country: "",
-            salutation: "Ms Angus",
-            parent_name: "Ms. J. Angus",
-            family_name: "Angus",
-            post_code: 4031,
-            relationship: "",
-            father_name: "Ronald Angus",
-            mobile1: "0413698552",
-            address1: "Billing Address",
-            address3: "",
-            address2: "U 4/6 Emerald St"
+            "mobile2": "",
+            "town_suburb": "JIMBOOMBA",
+            "parent1": {
+                "initials": "P",
+                "suffix": "suf",
+                "surname": "Clark",
+                "description": "Mother/Parent 1",
+                "preferred_name": "Paula",
+                "other_name": "PauOth",
+                "title": "Mrs",
+                "first_name": "Paula"
+            },
+            "phone": "",
+            "parent_name2": "",
+            "parent2": {
+                "initials": "E",
+                "suffix": "",
+                "surname": "Clark",
+                "description": "Father/Parent 2",
+                "preferred_name": "Edward",
+                "other_name": "",
+                "title": "",
+                "first_name": "Edward"
+            },
+            "email": "tammy.sloman@yahoo.com.au",
+            "mother_name": "Paula Clark",
+            "country": "",
+            "salutation": "Clark Salutation",
+            "parent_name": "Paula Clarké Another Line",
+            "family_name": "Clark",
+            "post_code": 4280,
+            "father_name": "Edward Clark",
+            "mobile1": "0412016500WWUFUGLQWUWEHEFLKUQH",
+            "address1": "Residential Address",
+            "address3": "",
+            "address2": "536 Arrow Road",
+            "address_description": "Residential",
+            "email2": "residential.address@tassweb.com",
+            "work_phone": "",
+            "state_code": "NSW",
+            "parent_code": "000055",
+            "address_number": 2,
+            "relationship": ""
           }
         ],
-        boarding_house_name: "Grand Hall Dormitory",
-        year: 11,
-        pref_name: "Paul",
-        boarding_house_code: "GHD",
-        dob: "15/10/1991",
-        family_name: "Angus",
-        gender: "M",
-        student_code: "0009080",
-        email: "davidh@tassweb.com.au",
-        first_name: "Paul",
-        mobile: "0412016500 "
+        "boarding_house_name": "Grand Hall Dormitory",
+        "pref_name": "Andy",
+        "boarding_house_code": "GHD",
+        "student_code": "0009130",
+        "preferred_surname": "Clark",
+        "email": "peter.ripper@tassweb.com.au",
+        "first_name": "Andréa",
+        "hosts": [
+          {
+            "town_suburb": "ALBION",
+            "mobile2": "",
+            "address_description": "",
+            "host_number": 1,
+            "email": "smithy@alphabus.com.au",
+            "state_code": "QLD",
+            "business_phone": "3321 9943",
+            "address_number": "",
+            "parent_code": "",
+            "country": "",
+            "host_name": "Mr & Mrs J A Smith",
+            "salutation": "Mr & Mrs Smith",
+            "post_code": 4007,
+            "home_phone": "3262 1149",
+            "enrolled_parent_code": "",
+            "relationship": "Aunty",
+            "address1": "121 Applefield Avenue",
+            "mobile1": "0418 558 845",
+            "fax": "",
+            "address3": "",
+            "address2": ""
+          }
+        ],
+        "room_number": "A214",
+        "year": 11,
+        "dob": "02/09/1994",
+        "family_name": "Clark",
+        "other_name": "Joan",
+        "gender": "F",
+        "mobile": "0025632532"
       }
     ]
     ```
