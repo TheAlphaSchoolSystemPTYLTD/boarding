@@ -12,7 +12,7 @@
 
 * **Permission:**
 
-  Student Medical > Confidential Notes tab
+  Medical Setup > Student Medical > Confidential Notes tab
 
 * **Method:**
 

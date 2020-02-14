@@ -12,7 +12,7 @@
 
 * **Permission:**
 
-  Boarders
+  Boarders > Boarders
 
 * **Method:**
 

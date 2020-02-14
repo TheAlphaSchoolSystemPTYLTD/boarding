@@ -12,7 +12,7 @@
 
 * **Permission:**
 
-  Student Medical
+  Medical Setup > Student Medical
 
 * **Method:**
 

@@ -12,7 +12,7 @@
 
 * **Permission:**
 
-  Student Medical > Student Illness/Daily Log
+  Medical Setup > Student Medical > Student Illness/Daily Log
 
 * **Method:**
 

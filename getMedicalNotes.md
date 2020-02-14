@@ -12,7 +12,7 @@
 
 * **Permission:**
 
-  Student Medical > Notes tab
+  Medical Setup > Medical Records > Student Medical > Notes tab
 
 * **Method:**
 

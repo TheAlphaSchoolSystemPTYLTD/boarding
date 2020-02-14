@@ -12,7 +12,7 @@
 
 * **Permission:**
 
-  Student Medical > Immunisations tab
+  Medical Setup > Student Medical > Immunisations tab
 
 * **Method:**
 

@@ -12,7 +12,7 @@
 
 * **Permission:**
 
-  Student Medical > Supplementary Info tab
+  Medical Setup > Student Medical > Supplementary Info tab
 
 * **Method:**
 
