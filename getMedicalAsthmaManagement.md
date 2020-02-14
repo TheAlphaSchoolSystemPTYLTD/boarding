@@ -12,7 +12,7 @@
 
 * **Permission:**
 
-  Medical Setup > Student Medical > Asthma Management tab
+  Medical Setup > Student Medical > Asthma Management tab > View
 
 * **Method:**
 

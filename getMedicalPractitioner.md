@@ -12,7 +12,7 @@
 
 * **Permission:**
 
-  Medical Setup > Student Medical > Practitioners tab
+  Medical Setup > Student Medical > Practitioners tab > View
 
 * **Method:**
 

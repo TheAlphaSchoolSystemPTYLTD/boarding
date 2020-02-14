@@ -12,7 +12,7 @@
 
 * **Permission:**
 
-  Medical Setup > Student Medical > Medical Conditions tab
+  Medical Setup > Student Medical > Medical Conditions tab > View
 
 * **Method:**
 
