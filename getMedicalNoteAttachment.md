@@ -1,4 +1,4 @@
-**getMedicalConfNoteAttachment**
+**getMedicalNoteAttachment**
 ----
   Returns a structured student medical condition attachment details data in JSON format.
   
@@ -12,7 +12,7 @@
 
 * **Permission:**
 
-  Student Medical > Confidential Notes tab
+  Student Medical > Notes tab
 
 * **Method:**
 
@@ -44,14 +44,14 @@
     { 
        "file_size":111,
        "has_attachment":true,
-       "file":"MTAwLEFQUi1EZWJpdCxPbmx5IG9uZSwxMDAuMDAsMC4wMCxVUExPQUQNCjIMi0wMC0wMCxBUFItQ3JlZGl0LE9ubHkgb25lLDAuMDAsMTAwLjAwLFVQTE9BRA0K",
+       "file":"[Base64 encoded image string]",
        "file_name":"GLtest.txt",
        "token":{ 
-          "note_date":"2020-01-29 15:33:12.0",
-          "timestamp":"{ts '2020-02-14 11:25:02'}",
+          "note_date":"2019-05-30 15:11:58.0",
+          "timestamp":"{ts '2020-02-14 11:11:12'}",
           "studcode":"0009130",
-          "note_cat":"GEN",
-          "attach_id":"5DEAB58E-EE13-4565-DC8311946B667C6E"
+          "note_cat":"APE",
+          "attach_id":"5D2779F0-C855-6569-A3268FF20A391ED0"
        }
     }
     ```
@@ -87,14 +87,14 @@
 * **Sample GET:** (With URL Encoded `token`)
 
   ```HTML
-    http://api.tasscloud.com.au/tassweb/api/?method=getMedicalConfNoteAttachment&appcode=API10&company=10&v=3&token=l1D8owEn111IHcXLRwXTB0oU2GX6rj%2BISqa9zXA8We3J3mwgjW5pdUvFK3%2FIZ4mJ4bMyfKTmEoup%2B3tTE9GeLQ%3D%3D
+    http://api.tasscloud.com.au/tassweb/api/?method=getMedicalNoteAttachment&appcode=API10&company=10&v=3&token=l1D8owEn111IHcXLRwXTB0oU2GX6rj%2BISqa9zXA8We3J3mwgjW5pdUvFK3%2FIZ4mJ4bMyfKTmEoup%2B3tTE9GeLQ%3D%3D
   ```
   
 * **Sample POST:**
 
   ```HTML
     <form id="postForm" name="postForm" method="POST" action="http://api.tasscloud.com.au/tassweb/api/">
-       <input type="hidden" name="method" value="getMedicalConfNoteAttachment">
+       <input type="hidden" name="method" value="getMedicalNoteAttachment">
        <input type="hidden" name="appcode" value="API10">
        <input type="hidden" name="company" value="10">
        <input type="hidden" name="v" value="3">

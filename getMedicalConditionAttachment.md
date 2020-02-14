@@ -1,4 +1,4 @@
-**getMedicalNoteAttachment**
+**getMedicalConditionAttachment**
 ----
   Returns a structured student medical condition attachment details data in JSON format.
   
@@ -12,7 +12,7 @@
 
 * **Permission:**
 
-  Student Medical > Notes tab
+  Student Medical > Medical Conditions tab
 
 * **Method:**
 
@@ -24,9 +24,7 @@
  
    `studcode [string]` - Student Code
 
-   `note_cat [string]` - Medical Note Category
-
-   `note_date [string]` - Medical Note Date
+   `mcond_code [string]` - Medical Condition Code
 
    `attach_id [string]` - Attachment Id
 
@@ -42,16 +40,15 @@
 
     ```javascript
     { 
-       "file_size":111,
+       "file_size":73771,
        "has_attachment":true,
-       "file":"MTAwLEFQUi1EZWJpdCxPbmx5IG9uZSwxMDAuMDAsMC4wMCxVUExPQUQNCjIMi0wMC0wMCxBUFItQ3JlZGl0LE9ubHkgb25lLDAuMDAsMTAwLjAwLFVQTE9BRA0K",
-       "file_name":"GLtest.txt",
+       "file":"[Base64 encoded image string]",
+       "file_name":"testing.JPG",
        "token":{ 
-          "note_date":"2019-05-30 15:11:58.0",
-          "timestamp":"{ts '2020-02-14 11:11:12'}",
+          "timestamp":"{ts '2020-02-14 09:13:41'}",
           "studcode":"0009130",
-          "note_cat":"APE",
-          "attach_id":"5D2779F0-C855-6569-A3268FF20A391ED0"
+          "mcond_code":"AST",
+          "attach_id":"5F724726-E361-C720-A1160233A4E8893D"
        }
     }
     ```
@@ -63,14 +60,9 @@
       "error": "studcode is required."
     ```
 
-    `note_cat` not supplied
+    `mcond_code` not supplied
     ```javascript
-      "error": "note_cat is required."
-    ```
-
-    `note_date` not supplied
-    ```javascript
-      "error": "note_date is required."
+      "error": "mcond_code is required."
     ```
 
     `attach_id` not supplied
@@ -87,14 +79,14 @@
 * **Sample GET:** (With URL Encoded `token`)
 
   ```HTML
-    http://api.tasscloud.com.au/tassweb/api/?method=getMedicalNoteAttachment&appcode=API10&company=10&v=3&token=l1D8owEn111IHcXLRwXTB0oU2GX6rj%2BISqa9zXA8We3J3mwgjW5pdUvFK3%2FIZ4mJ4bMyfKTmEoup%2B3tTE9GeLQ%3D%3D
+    http://api.tasscloud.com.au/tassweb/api/?method=getMedicalConditionAttachment&appcode=API10&company=10&v=3&token=l1D8owEn111IHcXLRwXTB0oU2GX6rj%2BISqa9zXA8We3J3mwgjW5pdUvFK3%2FIZ4mJ4bMyfKTmEoup%2B3tTE9GeLQ%3D%3D
   ```
   
 * **Sample POST:**
 
   ```HTML
     <form id="postForm" name="postForm" method="POST" action="http://api.tasscloud.com.au/tassweb/api/">
-       <input type="hidden" name="method" value="getMedicalNoteAttachment">
+       <input type="hidden" name="method" value="getMedicalConditionAttachment">
        <input type="hidden" name="appcode" value="API10">
        <input type="hidden" name="company" value="10">
        <input type="hidden" name="v" value="3">

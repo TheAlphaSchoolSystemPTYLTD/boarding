@@ -1,14 +1,18 @@
 **getPhoto**
 ----
   Returns a Photo of the specified User.
-
-* **Version:**
-
-  1
   
 * **Version History:**
 
-  TASS v51.4 - Method Added
+  TASS v52.2 - Method Added
+
+* **Version:**
+
+  3
+
+* **Permission:**
+
+  Boarders
 
 * **Method:**
 
