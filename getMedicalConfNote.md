@@ -26,7 +26,7 @@
 
    `note_cat [string]` - Medical Note Category
 
-   `note_date [string]` - Medical Note Date
+   `note_date [timestamp yyyy-MM-dd HH:mm:ss.SSS]` - Medical Note Date and Time
 
    **Optional:**
 
