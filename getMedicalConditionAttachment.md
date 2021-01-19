@@ -44,6 +44,7 @@
        "has_attachment":true,
        "file":"[Base64 encoded image string]",
        "file_name":"testing.JPG",
+       "__tassversion": "01.000.043.0",
        "token":{ 
           "timestamp":"{ts '2020-02-14 09:13:41'}",
           "studcode":"0009130",
