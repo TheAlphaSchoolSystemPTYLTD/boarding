@@ -41,19 +41,20 @@
 * **Success Response:**
 
     ```javascript
-    { 
-       "file_size":111,
-       "has_attachment":true,
-       "file":"[Base64 encoded image string]",
-       "file_name":"GLtest.txt",
-       "token":{ 
-          "note_date":"2020-01-29 15:33:12.0",
-          "timestamp":"{ts '2020-02-14 11:25:02'}",
-          "studcode":"0009130",
-          "note_cat":"GEN",
-          "attach_id":"5DEAB58E-EE13-4565-DC8311946B667C6E"
-       }
-    }
+  {
+      "file_size": 80039,
+      "has_attachment": true,
+      "file": "[Base64 encoded image string]",
+      "file_name": "0009445.jpg",
+      "__tassversion": "01.000.043.0",
+      "token": {
+            "note_date": "2021-01-19 16:13:29.000",
+            "timestamp": "{ts '2021-01-19 16:47:35'}",
+            "studcode": "0009130",
+            "note_cat": "NUR",
+            "attach_id": "FCC951C5-C477-4CF3-1005C09A39997741"
+      }
+  }
     ```
  
 * **Error Response:**
@@ -81,7 +82,7 @@
 * **Sample Parameters:**
 
   ```javascript
-    {"studcode":"0009130","mcond_code":"AST","attach_id":"5F724726-E361-C720-A1160233A4E8893D"}
+    {"studcode":"0009130","note_cat":"NUR","note_date":"2021-01-19 16:13:29.000","attach_id":"FCC951C5-C477-4CF3-1005C09A39997741"}
   ```
 
 * **Sample GET:** (With URL Encoded `token`)
