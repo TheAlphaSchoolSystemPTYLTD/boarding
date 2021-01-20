@@ -41,7 +41,7 @@
          "msupp_code":"DEN",
          "msupp_desc":"Dental Test",
          "comm_text":"test",
-         "__tassversion": "01.000.043.0",
+         "__tassversion": "01.053.3.000",
          "token":{ 
                 "msupp_code":"DEN",
                 "timestamp":"{ts '2020-02-14 10:22:05'}",
