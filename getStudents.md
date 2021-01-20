@@ -109,7 +109,7 @@
           }
 
       ],
-      "__tassversion": "01.000.043.0",
+      "__tassversion": "01.053.3.000",
       "token": {
             "commtype": "ALL",
             "timestamp": "{ts '2021-01-20 10:42:25'}"
