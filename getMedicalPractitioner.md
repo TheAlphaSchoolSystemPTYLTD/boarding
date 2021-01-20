@@ -37,19 +37,19 @@
 * **Success Response:**
 
     ```javascript
-{
-    "ptype_code": "002",
-    "doct_phone": "3020 7900",
-    "doct_name": "Dr Mary Jane Bellingham",
-    "ptype_desc": "Doctor",
-    "prac_num": 9
-    "__tassversion": "01.000.043.0",
-    "token": {
-          "timestamp": "{ts '2021-01-20 10:22:38'}",
-          "studcode": "0009130",
-          "prac_num": 9
-    }
-}
+  {
+      "ptype_code": "002",
+      "doct_phone": "3020 7900",
+      "doct_name": "Dr Mary Jane Bellingham",
+      "ptype_desc": "Doctor",
+      "prac_num": 9
+      "__tassversion": "01.053.3.000",
+      "token": {
+            "timestamp": "{ts '2021-01-20 10:22:38'}",
+            "studcode": "0009130",
+            "prac_num": 9
+      }
+  }
     ```
  
 * **Error Response:**
