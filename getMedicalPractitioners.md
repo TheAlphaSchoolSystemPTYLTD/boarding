@@ -52,7 +52,7 @@
                "prac_num":9
             }
        ],
-       "__tassversion": "01.000.043.0",
+       "__tassversion": "01.053.3.000",
        "token":{ 
             "timestamp":"{ts '2020-02-14 09:49:33'}",
             "studcode":"0009130"
