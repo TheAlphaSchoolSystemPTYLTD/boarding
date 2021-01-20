@@ -46,7 +46,7 @@
       "has_attachment": true,
       "file": "[Base64 encoded image string]",
       "file_name": "0009445.jpg",
-      "__tassversion": "01.000.043.0",
+      "__tassversion": "01.053.3.000",
       "token": {
             "note_date": "2021-01-19 16:13:29.000",
             "timestamp": "{ts '2021-01-19 16:47:35'}",
