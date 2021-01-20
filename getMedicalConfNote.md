@@ -50,7 +50,7 @@
        "attach_id":"5DEAB58E-EE13-4565-DC8311946B667C6E",
        "note_cat":"GEN",
        "note_num":"",
-       "__tassversion": "01.000.043.0",
+       "__tassversion": "01.053.3.000",
         "token":{ 
               "note_date":"2020-01-29 15:33:12.0",
               "timestamp":"{ts '2020-02-14 11:19:30'}",
