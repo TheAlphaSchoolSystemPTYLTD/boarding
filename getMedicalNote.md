@@ -50,7 +50,7 @@
          "attach_id":"5D2779F0-C855-6569-A3268FF20A391ED0",
          "note_cat":"APE",
          "note_num":"",
-         "__tassversion": "01.000.043.0",
+         "__tassversion": "01.053.3.000",
          "token":{ 
                 "note_date":"2019-05-30 15:11:58.0",
                 "timestamp":"{ts '2020-02-14 11:07:03'}",
