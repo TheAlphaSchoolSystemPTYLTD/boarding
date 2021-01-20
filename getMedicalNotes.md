@@ -78,9 +78,10 @@
              "note_cat":"PAR"
           }
        ],
+       "__tassversion": "01.000.043.0",
        "token":{ 
-          "timestamp":"{ts '2020-02-14 10:32:04'}",
-          "studcode":"0009130"
+              "timestamp":"{ts '2020-02-14 10:32:04'}",
+              "studcode":"0009130"
        }
     }
     ```
