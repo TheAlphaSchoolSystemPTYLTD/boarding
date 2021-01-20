@@ -53,7 +53,7 @@
                  "comm_text":"can see stuff with and without her glasses."
               }
        ],
-       "__tassversion": "01.000.043.0",
+       "__tassversion": "01.053.3.000",
        "token":{ 
                 "timestamp":"{ts '2020-02-14 10:19:49'}",
                 "studcode":"0009130"
