@@ -43,7 +43,7 @@
 				"file_name": "0009068.jpg",
 				"mime_type": "image/jpeg"
 		},
-		"__tassversion": "01.000.043.0",
+		"__tassversion": "01.053.3.000",
 		"token": {
 				"timestamp": "{ts '2021-01-20 10:37:27'}",
 				"userid": "0009068",
