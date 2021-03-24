@@ -196,7 +196,10 @@
 * **Sample Parameters:**
 
   ```javascript
-    commtype=ALL
+    {
+        "commtype":"ALL",
+        "studcode":"0009130"
+    }
   ```
 
 * **Sample GET:** (With URL Encoded `token`)
