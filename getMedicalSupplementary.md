@@ -38,14 +38,15 @@
 
     ```javascript
     { 
-       "msupp_code":"DEN",
-       "msupp_desc":"Dental Test",
-       "comm_text":"test",
-       "token":{ 
-          "msupp_code":"DEN",
-          "timestamp":"{ts '2020-02-14 10:22:05'}",
-          "studcode":"0009130"
-       }
+         "msupp_code":"DEN",
+         "msupp_desc":"Dental Test",
+         "comm_text":"test",
+         "__tassversion": "01.053.3.000",
+         "token":{ 
+                "msupp_code":"DEN",
+                "timestamp":"{ts '2020-02-14 10:22:05'}",
+                "studcode":"0009130"
+         }
     }
     ```
  
