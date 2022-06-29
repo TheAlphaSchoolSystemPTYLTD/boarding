@@ -6,6 +6,8 @@
 
   TASS v52.3 - Method Added
 
+  TASS v54.0 - Add a new conditional field `currentstatus`, change the required field `studcode` to a conditional field. Add new validations for `studcode` and `currentstatus`.
+
 * **Version:**
 
   3
@@ -22,7 +24,7 @@
 
    **Required:**
  
-   `studcode [string]` - Student Code
+   None
 
    **Optional:**
 
@@ -30,44 +32,117 @@
 
    **Conditional:**
 
-   None
+    `currentstatus [string]` - Required if `studcode` is not supplied. Must be 'current' or 'future' or 'past' or 'noncurrent'.
+
+    `studcode [string]` - Required if `currentstatus` is not supplied. Contains Only One Student Code if supplied.
 
 * **Success Response:**
 
+    when `currentstatus` is supplied
+    ```javascript
+      {
+        "data": [
+            {
+              "last_occ_date": "2018-01-30 00:00:00.0",
+              "mcond_desc": "Accident",
+              "mcond_code": "ACC",
+              "severe_ind": "N"
+            },
+            {
+              "last_occ_date": "2016-01-31 00:00:00.0",
+              "mcond_desc": "Anaphylaxis",
+              "mcond_code": "ANA",
+              "severe_ind": "Y"
+            }
+        ],
+        "__tassversion": "01.053.3.000",
+        "token": {
+            "timestamp": "{ts '2021-01-19 16:29:38'}",
+            "studcode": "0009130"
+        }
+      }
+    ```
+
+    when only `studcode` is supplied
     ```javascript
     {
-      "data": [
-        {
-          "last_occ_date": "2018-01-30 00:00:00.0",
-          "mcond_desc": "Accident",
-          "mcond_code": "ACC",
-          "severe_ind": "N"
-        },
-        {
-          "last_occ_date": "2016-01-31 00:00:00.0",
-          "mcond_desc": "Anaphylaxis",
-          "mcond_code": "ANA",
-          "severe_ind": "Y"
+        "data":[
+            {
+                "studcode":"0009130",
+                "medconditions":[
+                    {
+                        "last_occ_date":"2018-01-30 00:00:00.0",
+                        "mcond_desc":"Accident",
+                        "general_note": "",
+                        "mcond_code":"ACC",
+                        "severe_ind":"N"
+                    },
+                    {
+                        "last_occ_date":"2016-01-31 00:00:00.0",
+                        "mcond_desc":"Anaphylaxis",
+                        "general_note": "",
+                        "mcond_code":"ANA",
+                        "severe_ind":"Y"
+                    }
+                ]
+            },
+            {
+                "studcode":"0009134",
+                "medconditions":[
+                    {
+                        "last_occ_date":"",
+                        "mcond_desc":"Asthma",
+                        "general_note": "Asthma requires monitoring.\r\nVentoline REquired",
+                        "mcond_code":"AST",
+                        "severe_ind":"N"
+                    }
+                ]
+            }
+        ],
+        "__tassversion":"01.000.043.0",
+        "token":{
+            "timestamp":"{ts '2020-11-11 14:01:03'}",
+            "currentstatus":"current"
         }
-      ],
-      "token": {
-        "timestamp": "{ts '2020-02-13 16:56:20'}",
-        "studcode": "0009130"
-      }
     }
     ```
  
 * **Error Response:**
 
-    `studcode` not supplied
+    `studcode` and `currentstatus` are both not supplied
     ```javascript
-      "error": "studcode is required."
+      "error": "studcode or currentstatus is required."
+    ```
+
+    `studcode` contains more than one student code
+    ```javascript
+      "error": "Only one studcode can be processed at a time."
+    ```
+
+    `studcode` does not exist in `currentstatus` student list
+    ```javascript
+      "error": "[studcode] is not a valid [currentstatus] student."
+    ```
+
+    `currentstatus` does not match 'current' or 'future' or 'past' or 'noncurrent'
+    ```javascript
+      "error": "[currentstatus] must be 'current' or 'future' or 'past' or 'noncurrent'."
     ```
 
 * **Sample Parameters:**
 
+    when `currentstatus` is supplied
   ```javascript
-    {"studcode":"0009130"}
+    {
+      "currentstatus":"current"
+    }
+  ```
+
+    when only `studcode` is supplied
+  ```javascript
+    {
+      "studcode":"0009130"
+    }
   ```
 
 * **Sample GET:** (With URL Encoded `token`)
