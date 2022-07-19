@@ -40,67 +40,29 @@
 
     when `currentstatus` is supplied
     ```javascript
-    {
-        "data":[
-            {
-                "supplementaries":[
-                    {
-                        "msupp_code":"DEN",
-                        "msupp_desc":"Dental Test",
-                        "comm_text":"test"
-                    },
-                    {
-                        "msupp_code":"VIS",
-                        "msupp_desc":"Vision Tests",
-                        "comm_text":"can see stuff with and without her glasses."
-                    }
-                ],
+    { 
+       "data":[ 
+              { 
+                 "msupp_code":"DEN",
+                 "msupp_desc":"Dental Test",
+                 "comm_text":"test"
+              },
+              { 
+                 "msupp_code":"FIT",
+                 "msupp_desc":"Fitness Tests xxxx20",
+                 "comm_text":"Andy is a lazy little bludger and hence is quite overweight.  She cannot run further than 20 meters and don't even think of asking her to do something drastic like a situp or starjump.  She needs to x"
+              },
+              { 
+                 "msupp_code":"VIS",
+                 "msupp_desc":"Vision Tests",
+                 "comm_text":"can see stuff with and without her glasses."
+              }
+       ],
+       "__tassversion": "01.053.3.000",
+       "token":{ 
+                "timestamp":"{ts '2020-02-14 10:19:49'}",
                 "studcode":"0009130"
-            },
-            {
-                "supplementaries":[
-                    {
-                        "msupp_code":"HEA",
-                        "msupp_desc":"Hearing Test",
-                        "comm_text":"Has normal hearing range. J"
-                    },
-                    {
-                        "msupp_code":"VIS",
-                        "msupp_desc":"Vision Tests",
-                        "comm_text":"Now you can see me"
-                    }
-                ],
-                "studcode":"0009134"
-            }
-        ],
-        "__tassversion":"01.000.043.0",
-        "token":{
-            "timestamp":"{ts '2020-11-11 15:04:47'}",
-            "currentstatus":"current"
-        }
-    }
-    ```
-
-    when only `studcode` is supplied
-    ```javascript
-    {
-        "data":[
-            {
-                "msupp_code":"DEN",
-                "msupp_desc":"Dental Test",
-                "comm_text":"test"
-            },
-            {
-                "msupp_code":"VIS",
-                "msupp_desc":"Vision Tests",
-                "comm_text":"can see stuff with and without her glasses."
-            }
-        ],
-        "__tassversion":"01.000.043.0",
-        "token":{
-            "timestamp":"{ts '2020-11-11 15:03:01'}",
-            "studcode":"0009130"
-        }
+       }
     }
     ```
  
