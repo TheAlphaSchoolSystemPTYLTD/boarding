@@ -40,138 +40,66 @@
 
     when `currentstatus` is supplied
     ```javascript
-    {
-        "data":[
-            {
-                "mednotes":[
-                    {
-                        "note_date":"2018-11-01 12:19:44.0",
-                        "ncat_desc":"General",
-                        "note_text":"Andy Standard Medical General Note",
-                        "entry_code":"tsloman",
-                        "entry_date":"2018-11-01 00:00:00.0",
-                        "attach_url":"",
-                        "attach_id":"",
-                        "note_cat":"GEN"
-                    },
-                    {
-                        "note_date":"2017-12-08 10:31:23.0",
-                        "ncat_desc":"General",
-                        "note_text":"Test 08/12/17",
-                        "entry_code":"tsloman",
-                        "entry_date":"2017-12-08 00:00:00.0",
-                        "attach_url":"",
-                        "attach_id":"",
-                        "note_cat":"GEN"
-                    },
-                    {
-                        "note_date":"2015-08-10 00:00:00.0",
-                        "ncat_desc":"Doctor Advice",
-                        "note_text":"Medical Note",
-                        "entry_code":"peterr",
-                        "entry_date":"2015-08-10 00:00:00.0",
-                        "attach_url":"",
-                        "attach_id":"",
-                        "note_cat":"DOC"
-                    }
-                ],
-                "studcode":"0009130"
-            },
-            {
-                "mednotes":[
-                    {
-                        "note_date":"2016-11-04 00:00:00.0",
-                        "ncat_desc":"Doctor Advice",
-                        "note_text":"test",
-                        "entry_code":"ale",
-                        "entry_date":"2016-11-04 00:00:00.0",
-                        "attach_url":"",
-                        "attach_id":"",
-                        "note_cat":"DOC"
-                    },
-                    {
-                        "note_date":"2016-11-04 00:00:00.0",
-                        "ncat_desc":"Dim Whit Note",
-                        "note_text":"testing 04/11",
-                        "entry_code":"ale",
-                        "entry_date":"2016-11-04 00:00:00.0",
-                        "attach_url":"",
-                        "attach_id":"",
-                        "note_cat":"DIM"
-                    }
-                ],
-                "studcode":"0009134"
-            }
-        ],
-        "__tassversion":"01.000.043.0",
-        "token":{
-            "timestamp":"{ts '2020-11-11 15:49:09'}",
-            "currentstatus":"current"
-        }
-    }
-    ```
-
-    when only `studcode` is supplied
-    ```javascript
-    {
-        "data":[
-            {
-                "note_date":"2018-11-01 12:19:44.0",
-                "ncat_desc":"General",
-                "note_text":"Andy Standard Medical General Note",
-                "entry_code":"tsloman",
-                "entry_date":"2018-11-01 00:00:00.0",
-                "attach_url":"",
-                "attach_id":"",
-                "note_cat":"GEN"
-            },
-            {
-                "note_date":"2017-12-08 10:31:23.0",
-                "ncat_desc":"General",
-                "note_text":"Test 08/12/17",
-                "entry_code":"tsloman",
-                "entry_date":"2017-12-08 00:00:00.0",
-                "attach_url":"",
-                "attach_id":"",
-                "note_cat":"GEN"
-            },
-            {
-                "note_date":"2015-08-10 00:00:00.0",
-                "ncat_desc":"Doctor Advice",
-                "note_text":"Medical Note",
-                "entry_code":"peterr",
-                "entry_date":"2015-08-10 00:00:00.0",
-                "attach_url":"",
-                "attach_id":"",
-                "note_cat":"DOC"
-            }
-        ],
-        "__tassversion":"01.000.043.0",
-        "token":{
-            "timestamp":"{ts '2020-11-11 15:48:49'}",
-            "studcode":"0009130"
-        }
+    { 
+       "data":[ 
+          { 
+             "note_date":"2019-05-30 15:11:58.0",
+             "ncat_desc":"Appendix",
+             "note_text":"New note for andy.....",
+             "entry_code":"fang",
+             "entry_date":"2019-05-30 00:00:00.0",
+             "attach_url":"inline-file.cfm?do=ui.web.note.attachment&entity_code=0009130&entity_type=M&note_cat=APE&note_date=2019-05-30 15:11:58.0&notetype=standard",
+             "attach_id":"5D2779F0-C855-6569-A3268FF20A391ED0",
+             "note_cat":"APE"
+          },
+          { 
+             "note_date":"2018-11-01 12:19:44.0",
+             "ncat_desc":"General",
+             "note_text":"Andy Standard Medical General Note",
+             "entry_code":"tsloman",
+             "entry_date":"2018-11-01 00:00:00.0",
+             "attach_url":"",
+             "attach_id":"",
+             "note_cat":"GEN"
+          },
+          { 
+             "note_date":"2016-11-04 11:39:23.0",
+             "ncat_desc":"Doctor Advice",
+             "note_text":"test, now has an attachment",
+             "entry_code":"ale",
+             "entry_date":"2016-11-04 00:00:00.0",
+             "attach_url":"inline-file.cfm?do=ui.web.note.attachment&entity_code=0009130&entity_type=M&note_cat=DOC&note_date=2016-11-04 11:39:23.0&notetype=standard",
+             "attach_id":"E1F63EBE-987B-103A-921C45787AF90D6A",
+             "note_cat":"DOC"
+          },
+          { 
+             "note_date":"2015-09-11 00:00:00.0",
+             "ncat_desc":"Parental Advice",
+             "note_text":"j test",
+             "entry_code":"gareth",
+             "entry_date":"2015-09-11 00:00:00.0",
+             "attach_url":"inline-file.cfm?do=ui.web.note.attachment&entity_code=0009130&entity_type=M&note_cat=PAR&note_date=2015-09-11 00:00:00.0&notetype=standard",
+             "attach_id":"430928EB-FBEC-9968-DAE4F938310140ED",
+             "note_cat":"PAR"
+          }
+       ],
+       "__tassversion": "01.053.3.000",
+       "token":{ 
+              "timestamp":"{ts '2020-02-14 10:32:04'}",
+              "studcode":"0009130"
+       }
     }
     ```
  
 * **Error Response:**
 
     `studcode` and `currentstatus` are both not supplied
-<<<<<<< Updated upstream
     ```javascript
       "error": "studcode or currentstatus is required."
     ```
 
     `studcode` contains more than one student code
     ```javascript
-=======
-    ```javascript
-      "error": "studcode or currentstatus is required."
-    ```
-
-    `studcode` contains more than one student code
-    ```javascript
->>>>>>> Stashed changes
       "error": "Only one studcode can be processed at a time."
     ```
 
