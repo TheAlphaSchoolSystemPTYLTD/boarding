@@ -8,7 +8,7 @@
 
   TASS v54.0 - Add a new conditional field `currentstatus`, change the required field `studcode` to a conditional field. Add new validations for `studcode` and `currentstatus`.
 
-  TASS v56.5 - Add a new optional field `includemedication`, new return data `general_note` within `medconditions` array.
+  TASS v56.5 - Add a new optional field `includemedication`, new return data `general_note`.
                Add a conditional return data `medication_requirements` within `medconditions` array  
 
 * **Version:**
@@ -49,13 +49,15 @@
               "last_occ_date": "2018-01-30 00:00:00.0",
               "mcond_desc": "Accident",
               "mcond_code": "ACC",
-              "severe_ind": "N"
+              "severe_ind": "N",
+              "general_note": "Must not have running exercise"
             },
             {
               "last_occ_date": "2016-01-31 00:00:00.0",
               "mcond_desc": "Anaphylaxis",
               "mcond_code": "ANA",
-              "severe_ind": "Y"
+              "severe_ind": "Y",
+              "general_note": "Has suffered Anaphylaxis since birth."
             }
         ],
         "__tassversion": "01.053.3.000",
@@ -76,7 +78,6 @@
                     {
                         "last_occ_date":"2018-01-30 00:00:00.0",
                         "mcond_desc":"Accident",
-                        "general_note": "",
                         "mcond_code":"ACC",
                         "severe_ind":"N",
                         "general_note": "Must not have running exercise"
@@ -84,7 +85,6 @@
                     {
                         "last_occ_date":"2016-01-31 00:00:00.0",
                         "mcond_desc":"Anaphylaxis",
-                        "general_note": "",
                         "mcond_code":"ANA",
                         "severe_ind":"Y",
                         "general_note": "Has suffered Anaphylaxis since birth."
@@ -97,10 +97,9 @@
                     {
                         "last_occ_date":"",
                         "mcond_desc":"Asthma",
-                        "general_note": "Asthma requires monitoring.\r\nVentoline REquired",
                         "mcond_code":"AST",
                         "severe_ind":"N",
-                        "general_note": "Minimise the outdoor activity."
+                        "general_note": "Asthma requires monitoring.Ventoline Required",
                     }
                 ]
             }
@@ -112,7 +111,7 @@
         }
     }
     ```
-    when `currentstatus` is supplied and `includemedication` is supplied as 'true'
+    when `currentstatus` or `studcode` is supplied and `includemedication` is supplied as 'true'
     ```javascript
     {
       "data": [
@@ -187,7 +186,7 @@
     }
   ```
 
-      when `currentstatus` is supplied and `includemedication` is supplied
+    when `currentstatus` or `studcode` is supplied and `includemedication` is supplied
   ```javascript
     {
       "currentstatus":"current"
