@@ -37,11 +37,19 @@
 * **Success Response:**
 	
 	```javascript
-	file_info: {
-			image: [Base64 encoded image string],
-			file_name: "0009068.jpg",
-			mime_type: "image/jpeg"
+	{
+		"file_info": {
+				"image": "[Base64 encoded image string]",
+				"file_name": "0009068.jpg",
+				"mime_type": "image/jpeg"
+		},
+		"__tassversion": "01.053.3.000",
+		"token": {
+				"timestamp": "{ts '2021-01-20 10:37:27'}",
+				"userid": "0009068",
+				"type": "S"
 		}
+	}
   ```
  
 * **Error Response:**
@@ -63,7 +71,7 @@
 * **Sample Parameters:**
 
   ```javascript
-	type=S&userid=0009068
+	{"type":"S","userid":"0009068"}
   ```
 
 * **Sample GET:** (With URL Encoded `token`)
