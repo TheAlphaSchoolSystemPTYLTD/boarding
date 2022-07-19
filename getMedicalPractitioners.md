@@ -40,79 +40,28 @@
 
     when `currentstatus` is supplied
     ```javascript
-    {
-        "data":[
-            {
-                "practitioners":[
-                    {
-                        "ptype_code":"SUR",
-                        "doct_phone":"8435889727349068572934867",
-                        "doct_name":"Dr U R A Fish",
-                        "ptype_desc":"General Surgeon",
-                        "prac_num":7
-                    },
-                    {
-                        "ptype_code":"006",
-                        "doct_phone":"3569 4569",
-                        "doct_name":"Dr Zuess",
-                        "ptype_desc":"Psychiatrist",
-                        "prac_num":3
-                    }
-                ],
-                "studcode":"0009130"
+    { 
+       "data":[ 
+            { 
+               "ptype_code":"003",
+               "doct_phone":"(02) 3569 7812 xxxxxxxend",
+               "doct_name":"Dr Alexander Sebasti Millhouse",
+               "ptype_desc":"Chiropractor",
+               "prac_num":2
             },
-            {
-                "practitioners":[
-                    {
-                        "ptype_code":"002",
-                        "doct_phone":"07 3987 4563",
-                        "doct_name":"Dr Zuess J",
-                        "ptype_desc":"Doctor",
-                        "prac_num":1
-                    },
-                    {
-                        "ptype_code":"002",
-                        "doct_phone":"",
-                        "doct_name":"Dr Godspeed",
-                        "ptype_desc":"Doctor",
-                        "prac_num":3
-                    }
-                ],
-                "studcode":"0009134"
+            { 
+               "ptype_code":"002",
+               "doct_phone":"",
+               "doct_name":"Dr Mary Jane Bellingham",
+               "ptype_desc":"Doctor",
+               "prac_num":9
             }
-        ],
-        "__tassversion":"01.000.043.0",
-        "token":{
-            "timestamp":"{ts '2020-11-11 14:41:13'}",
-            "currentstatus":"current"
-        }
-    }
-    ```
-
-    when only `studcode` is supplied
-    ```javascript
-    {
-        "data":[
-            {
-                "ptype_code":"SUR",
-                "doct_phone":"8435889727349068572934867",
-                "doct_name":"Dr U R A Fish",
-                "ptype_desc":"General Surgeon",
-                "prac_num":7
-            },
-            {
-                "ptype_code":"006",
-                "doct_phone":"3569 4569",
-                "doct_name":"Dr Zuess",
-                "ptype_desc":"Psychiatrist",
-                "prac_num":3
-            }
-        ],
-        "__tassversion":"01.000.043.0",
-        "token":{
-            "timestamp":"{ts '2020-11-11 14:37:18'}",
+       ],
+       "__tassversion": "01.053.3.000",
+       "token":{ 
+            "timestamp":"{ts '2020-02-14 09:49:33'}",
             "studcode":"0009130"
-        }
+       }
     }
     ```
  
