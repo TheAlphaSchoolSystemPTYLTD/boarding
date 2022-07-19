@@ -106,57 +106,30 @@
                 "studcode":"0009134"
             }
         ],
-        "__tassversion":"01.000.043.0",
-        "token":{
-            "timestamp":"{ts '2020-11-11 13:44:32'}",
-            "currentstatus":"current"
-        }
-    }
-    ```
-
-    when only `studcode` is supplied
-    ```javascript
-    {
-        "contacts":[
-            {
-                "contact_name":"Mrs P Clarké Second Line",
-                "medical_townsub":"ALBION",
-                "medical_home_phone":"3870 9987",
-                "medical_addr1":"",
-                "medical_country":"AUSTRALIA",
-                "medical_addr2":"123 Smith Rd",
-                "medical_mob_phone2":"",
-                "medical_addr3":"the bag end of nowhere",
-                "medical_post_code":4005,
-                "medical_bus_phone":"3201 1302",
-                "medical_mob_phone":"0427203657",
-                "medical_state_code":"NT"
-            }
-        ],
-        "swimingLevel":"Can swim 50m",
-        "surname":"Clark",
-        "given_name":"Andréa Joan",
-        "mud_fields":{
-            "Panadol/Aspirin":"Y",
-            "Allergies2":"YES",
-            "Fifth Text Desc":"",
-            "Allergies":"N",
-            "Diabeties":"Y",
-            "Measles":"N",
-            "Blood Group":"A",
-            "Preferred Hospital":"WE",
-            "Private Health No.":"903600060139933770",
-            "Private Health Insur":"N",
-            "Health Insurance Co":"MP",
-            "Consent Form":"ATH",
-            "ADHD Medication":"RIT"
+        "swimingLevel": "Can swim 50m",
+        "surname": "Clark",
+        "given_name": "Andréa Joan",
+        "mud_fields": {
+                "Panadol/Aspirin": "Y",
+                "Allergies2": "YES",
+                "Fifth Text Desc": "",
+                "Allergies": "N",
+                "Diabeties": "Y",
+                "Measles": "N",
+                "Blood Group": "A",
+                "Preferred Hospital": "WE",
+                "Private Health No.": "903600060139933770",
+                "Private Health Insur": "N",
+                "Health Insurance Co": "MP",
+                "Consent Form": "ATH",
+                "ADHD Medication": "RIT"
         },
-        "stud_code":"0009130",
-        "__tassversion":"01.000.043.0",
-        "preferred_name":"Andy",
-        "token":{
-            "timestamp":"{ts '2020-11-11 13:37:12'}",
-            "studcode":"0009130"
+        "stud_code": "0009130",
+        "preferred_name": "Andy",
+        "__tassversion": "01.053.3.000",
+        "token": {
+            "timestamp": "{ts '2020-02-13 16:52:24'}",
+            "studcode": "0009130"
         }
     }
     ```
