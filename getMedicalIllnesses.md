@@ -97,7 +97,7 @@
           ]
         }
       ],
-      "__tassversion":"01.000.043.0",
+      "__tassversion":"01.054.0.0",
       "token":{
         "timestamp":"{ts '2020-11-10 14:24:06'}",
         "studcode":"0009130",
@@ -144,7 +144,7 @@
              "disch_time":""
           }
        ],
-       "__tassversion": "01.053.3.000",
+       "__tassversion": "01.054.0.000",
        "token":{ 
             "timestamp":"{ts '2020-02-14 10:02:52'}",
             "studcode":"0009130"

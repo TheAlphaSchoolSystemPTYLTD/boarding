@@ -41,97 +41,194 @@
     when `currentstatus` is supplied
     ```javascript
     {
-        "data":[
+        "data": [
             {
-                "contacts":[
+                "contacts": [
                     {
-                        "contact_name":"Mrs P Clarké Second Line",
-                        "medical_townsub":"ALBION",
-                        "medical_home_phone":"3870 9987",
-                        "medical_addr1":"",
-                        "medical_country":"AUSTRALIA",
-                        "medical_addr2":"123 Smith Rd",
-                        "medical_mob_phone2":"",
-                        "medical_addr3":"the bag end of nowhere",
-                        "medical_post_code":4005,
-                        "medical_bus_phone":"3201 1302",
-                        "medical_mob_phone":"0427203657",
-                        "medical_state_code":"NT"
+                        "contact_name": "Mr & Mrs L. O'Bell",
+                        "medical_townsub": "INALA",
+                        "medical_home_phone": "073874 6589",
+                        "medical_addr1": "6 Polaris Street",
+                        "medical_country": "",
+                        "medical_addr2": "",
+                        "medical_mob_phone2": "0427203657",
+                        "medical_addr3": "",
+                        "medical_post_code": 4077,
+                        "medical_bus_phone": "073564 8941",
+                        "medical_mob_phone": "0488067672",
+                        "medical_state_code": "QLD"
+                    },
+                    {
+                        "contact_name": "Bell Mother",
+                        "medical_townsub": "",
+                        "medical_home_phone": "",
+                        "medical_addr1": "",
+                        "medical_country": "",
+                        "medical_addr2": "",
+                        "medical_mob_phone2": "",
+                        "medical_addr3": "",
+                        "medical_post_code": "",
+                        "medical_bus_phone": "",
+                        "medical_mob_phone": "",
+                        "medical_state_code": ""
+                    },
+                    {
+                        "contact_name": "Dr S O'Bell",
+                        "medical_townsub": "INALA",
+                        "medical_home_phone": "073874 6589",
+                        "medical_addr1": "19 Polaris Street",
+                        "medical_country": "",
+                        "medical_addr2": "",
+                        "medical_mob_phone2": "0427203657",
+                        "medical_addr3": "",
+                        "medical_post_code": 4077,
+                        "medical_bus_phone": "073564 8941",
+                        "medical_mob_phone": "",
+                        "medical_state_code": "QLD"
                     }
                 ],
-                "swimingLevel":"Can swim 50m",
-                "surname":"Clark",
-                "given_name":"Andréa Joan",
-                "mud_fields":{
-                    "Panadol/Aspirin":"Y",
-                    "Allergies2":"YES",
-                    "Fifth Text Desc":"",
-                    "Allergies":"N",
-                    "Diabeties":"Y",
-                    "Measles":"N",
-                    "Blood Group":"A",
-                    "Preferred Hospital":"WE",
-                    "Private Health No.":"903600060139933770",
-                    "Private Health Insur":"N",
-                    "Health Insurance Co":"MP",
-                    "Consent Form":"ATH",
-                    "ADHD Medication":"RIT"
+                "swimingLevel": "Treads water",
+                "surname": "Bell",
+                "given_name": "Eric James",
+                "mud_fields": {
+                    "Panadol/Aspirin": "",
+                    "Allergies2": "",
+                    "Allergies": "",
+                    "Diabeties": "",
+                    "Measles": "",
+                    "Blood Group": "B",
+                    "Preferred Hospital": "Mater",
+                    "Private Health No.": "903600060139933770",
+                    "Private Health Insur": "",
+                    "Health Insurance Co": "",
+                    "Consent Form": "",
+                    "ADHD Medication": ""
                 },
-                "preferred_name":"Andy",
-                "studcode":"0009130"
+                "preferred_name": "Erica",
+                "studcode": "0009097"
             },
             {
-                "contacts":[
-                    
+                "contacts": [
+                    {
+                        "contact_name": "Mr & Mrs L Davenport-Henderson",
+                        "medical_townsub": "CHERMSIDE",
+                        "medical_home_phone": "265 7741",
+                        "medical_addr1": "11 Buruda Street",
+                        "medical_country": "",
+                        "medical_addr2": "",
+                        "medical_mob_phone2": "",
+                        "medical_addr3": "",
+                        "medical_post_code": 4032,
+                        "medical_bus_phone": "357 2251",
+                        "medical_mob_phone": "0412016500",
+                        "medical_state_code": "QLD"
+                    }
                 ],
-                "swimingLevel":"Can swim 50m",
-                "surname":"Clark",
-                "given_name":"Lauren Jane",
-                "mud_fields":{
-                    "Panadol/Aspirin":"N",
-                    "Allergies2":"",
-                    "Fifth Text Desc":"",
-                    "Allergies":"N",
-                    "Diabeties":"",
-                    "Measles":"Y",
-                    "Blood Group":"",
-                    "Preferred Hospital":"MA",
-                    "Private Health No.":"",
-                    "Private Health Insur":"N",
-                    "Health Insurance Co":"MP",
-                    "Consent Form":"ATH",
-                    "ADHD Medication":""
+                "swimingLevel": "",
+                "surname": "Davenport-Henderson",
+                "given_name": "Wayney Eric Henry Graham",
+                "mud_fields": {
+                    "Panadol/Aspirin": "",
+                    "Allergies2": "",
+                    "Allergies": "",
+                    "Diabeties": "",
+                    "Measles": "",
+                    "Blood Group": "",
+                    "Preferred Hospital": "",
+                    "Private Health No.": "",
+                    "Private Health Insur": "",
+                    "Health Insurance Co": "",
+                    "Consent Form": "",
+                    "ADHD Medication": ""
                 },
-                "preferred_name":"Lauren",
-                "studcode":"0009134"
+                "preferred_name": "Wayne",
+                "studcode": "0009149"
             }
         ],
-        "swimingLevel": "Can swim 50m",
+        "__tassversion": "01.054.0.000",
+        "token": {
+            "timestamp": "{ts '2022-07-20 10:54:04'}",
+            "currentstatus": "current"
+        }
+    }
+    ```
+
+     when `studcode` is supplied
+    ```javascript
+    {
+        "contacts": [
+            {
+                "contact_name": "Mrs P Clarke Second Line",
+                "medical_townsub": "TOOWONG",
+                "medical_home_phone": "3870 9987",
+                "medical_addr1": "Gigi Lodge",
+                "medical_country": "",
+                "medical_addr2": "Unit 810",
+                "medical_mob_phone2": "yeah yeah",
+                "medical_addr3": "24 Augustus Street",
+                "medical_post_code": 4066,
+                "medical_bus_phone": "3201 1302",
+                "medical_mob_phone": "0412016500",
+                "medical_state_code": "QLD"
+            },
+            {
+                "contact_name": "Mr E.& R Clark",
+                "medical_townsub": "MUDGEERABA",
+                "medical_home_phone": "3870 9987",
+                "medical_addr1": "Somerset Park",
+                "medical_country": "",
+                "medical_addr2": "Unit 54",
+                "medical_mob_phone2": "0412016500",
+                "medical_addr3": "2-4 Langport Parade",
+                "medical_post_code": 4213,
+                "medical_bus_phone": "33201 1301",
+                "medical_mob_phone": "",
+                "medical_state_code": "QLD"
+            },
+            {
+                "contact_name": "Mrs Nose.E. Neighbour",
+                "medical_townsub": "STAFFORD",
+                "medical_home_phone": "870 9987",
+                "medical_addr1": "Alt Emergency Address",
+                "medical_country": "",
+                "medical_addr2": "34 Dunedoo St",
+                "medical_mob_phone2": "0995 111 222",
+                "medical_addr3": "",
+                "medical_post_code": 4053,
+                "medical_bus_phone": "201 1301",
+                "medical_mob_phone": "0488067672",
+                "medical_state_code": "TAS"
+            }
+        ],
+        "swimingLevel": "Can float with assistance but will sink if unassisted",
         "surname": "Clark",
-        "given_name": "Andréa Joan",
+        "given_name": "Andrea Gracie Joan",
         "mud_fields": {
-                "Panadol/Aspirin": "Y",
-                "Allergies2": "YES",
-                "Fifth Text Desc": "",
-                "Allergies": "N",
-                "Diabeties": "Y",
-                "Measles": "N",
-                "Blood Group": "A",
-                "Preferred Hospital": "WE",
-                "Private Health No.": "903600060139933770",
-                "Private Health Insur": "N",
-                "Health Insurance Co": "MP",
-                "Consent Form": "ATH",
-                "ADHD Medication": "RIT"
+            "Panadol/Aspirin": "N",
+            "Allergies2": "YES",
+            "Private Health": "",
+            "Text UD 15": "",
+            "Text UD 14": "",
+            "Allergies": "Y",
+            "Diabeties": "",
+            "Measles": "N",
+            "Blood Group": "A+",
+            "Preferred Hospital": "WE",
+            "Private Health No.": "703600060139933770",
+            "Private Health Insur": "N",
+            "Health Insurance Co": "MP",
+            "Consent Form": "ATH",
+            "ADHD Medication": "RAK"
         },
         "stud_code": "0009130",
-        "preferred_name": "Andy",
-        "__tassversion": "01.053.3.000",
+        "__tassversion": "01.054.0.000",
+        "preferred_name": "Joanna",
         "token": {
-            "timestamp": "{ts '2020-02-13 16:52:24'}",
+            "timestamp": "{ts '2022-07-20 10:32:12'}",
             "studcode": "0009130"
         }
     }
+    
     ```
  
 * **Error Response:**
