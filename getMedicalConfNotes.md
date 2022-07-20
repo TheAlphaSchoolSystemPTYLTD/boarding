@@ -40,8 +40,51 @@
 
     when `currentstatus` is supplied
     ```javascript
+    {
+        "data": [
+            {
+                "medcofnotes": [
+                    {
+                        "note_date": "2005-10-17 00:00:00.0",
+                        "ncat_desc": "Parental Advice",
+                        "note_text": "Stephanie has to build confidence when using NovoPen.",
+                        "entry_code": "ken",
+                        "entry_date": "2005-10-17 00:00:00.0",
+                        "attach_url": "",
+                        "attach_id": "",
+                        "note_cat": "PAR"
+                    }
+                ],
+                "studcode": "0009070"
+            },
+            {
+                "medcofnotes": [
+                    {
+                        "note_date": "2012-12-24 00:00:00.0",
+                        "ncat_desc": "Nursing Advice",
+                        "note_text": "Liam requires his usual medication.",
+                        "entry_code": "george",
+                        "entry_date": "2012-12-24 00:00:00.0",
+                        "attach_url": "",
+                        "attach_id": "",
+                        "note_cat": "NUR"
+                    }
+                ],
+                "studcode": "0010045"
+            }
+        ],
+        "__tassversion": "01.054.0.000",
+        "token": {
+            "timestamp": "{ts '2022-07-20 11:07:22'}",
+            "currentstatus": "current"
+        }
+    }
+    ```
+
+    when `studcode` is supplied
+    ```javascript
     { 
-       "data":[ 
+        "data":[ 
             { 
                "note_date":"2020-01-29 15:33:12.0",
                "ncat_desc":"General",
@@ -83,7 +126,7 @@
                "note_cat":"NUR"
             }
        ],
-       "__tassversion": "01.053.3.000",
+       "__tassversion": "01.054.0.000",
        "token":{ 
             "timestamp":"{ts '2020-02-14 11:14:12'}",
             "studcode":"0009130"

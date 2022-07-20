@@ -38,14 +38,14 @@
 
 * **Success Response:**
 
-    when `currentstatus` is supplied
+    when `studcode` is supplied
     ```javascript
     { 
        "data":[ 
           { 
              "note_date":"2019-05-30 15:11:58.0",
              "ncat_desc":"Appendix",
-             "note_text":"New note for andy.....",
+             "note_text":"General note",
              "entry_code":"fang",
              "entry_date":"2019-05-30 00:00:00.0",
              "attach_url":"inline-file.cfm?do=ui.web.note.attachment&entity_code=0009130&entity_type=M&note_cat=APE&note_date=2019-05-30 15:11:58.0&notetype=standard",
@@ -55,7 +55,7 @@
           { 
              "note_date":"2018-11-01 12:19:44.0",
              "ncat_desc":"General",
-             "note_text":"Andy Standard Medical General Note",
+             "note_text":"Standard Medical General Note",
              "entry_code":"tsloman",
              "entry_date":"2018-11-01 00:00:00.0",
              "attach_url":"",
@@ -65,7 +65,7 @@
           { 
              "note_date":"2016-11-04 11:39:23.0",
              "ncat_desc":"Doctor Advice",
-             "note_text":"test, now has an attachment",
+             "note_text":"Doctors advice",
              "entry_code":"ale",
              "entry_date":"2016-11-04 00:00:00.0",
              "attach_url":"inline-file.cfm?do=ui.web.note.attachment&entity_code=0009130&entity_type=M&note_cat=DOC&note_date=2016-11-04 11:39:23.0&notetype=standard",
@@ -75,7 +75,7 @@
           { 
              "note_date":"2015-09-11 00:00:00.0",
              "ncat_desc":"Parental Advice",
-             "note_text":"j test",
+             "note_text":"General parental advice",
              "entry_code":"gareth",
              "entry_date":"2015-09-11 00:00:00.0",
              "attach_url":"inline-file.cfm?do=ui.web.note.attachment&entity_code=0009130&entity_type=M&note_cat=PAR&note_date=2015-09-11 00:00:00.0&notetype=standard",
@@ -83,11 +83,52 @@
              "note_cat":"PAR"
           }
        ],
-       "__tassversion": "01.053.3.000",
+       "__tassversion": "01.054.4.000",
        "token":{ 
-              "timestamp":"{ts '2020-02-14 10:32:04'}",
+              "timestamp": "{ts '2022-07-20 09:47:56'}",
               "studcode":"0009130"
        }
+    }
+    ```
+    when `currentstatus` is supplied
+    ```javascript
+    {
+      "data": [
+          {
+              "mednotes": [
+                  {
+                      "note_date": "2016-11-04 00:00:00.0",
+                      "ncat_desc": "Doctor Advice",
+                      "note_text": "Doctors advice note",
+                      "entry_code": "ale",
+                      "entry_date": "2016-11-04 00:00:00.0",
+                      "attach_url": "",
+                      "attach_id": "",
+                      "note_cat": "DOC"
+                  },
+                  {
+                      "note_date": "2013-01-02 00:00:00.0",
+                      "ncat_desc": "General",
+                      "note_text": "This is a General Medical Note, please see an attachment",
+                      "entry_code": "tim",
+                      "entry_date": "2013-01-02 00:00:00.0",
+                      "attach_url": "inline-file.cfm?do=ui.web.note.attachment&entity_code=0009213&entity_type=M&note_cat=GEN&note_date=2013-01-02 00:00:00.0&notetype=standard",
+                      "attach_id": "BBC20B77-96F8-1E43-118EEE5DD7E9B19F",
+                      "note_cat": "GEN"
+                  }
+              ],
+              "studcode": "0009213"
+          },
+          {
+              "mednotes": [],
+              "studcode": "0009163"
+          }
+      ],
+      "__tassversion": "01.054.4.000",
+      "token": {
+            "timestamp": "{ts '2022-07-20 09:51:46'}",
+            "currentstatus": "current"
+      }
     }
     ```
  
