@@ -9,7 +9,10 @@
   TASS v54.0 - Add a new conditional field `currentstatus`, change the required field `studcode` to a conditional field. Add new validations for `studcode` and `currentstatus`.
 
   TASS v56.5 - Add a new optional field `includemedication`, new return data `general_note`.
-               Add a conditional return data `medication_requirements` within `medconditions` array  
+               Add a conditional return data `medication_requirements` within `medconditions` array
+
+  TASS v57.12.150 - Add a new optional field `includemedicationnotes`, new return data `note_date` and `note_text`.
+               Add a conditional return data `medication_notes` within `medconditions` array
 
 * **Version:**
 
@@ -32,6 +35,8 @@
    **Optional:**
 
     `includemedication [boolean]` - Must be 'true' or 'false'. If it is not provided, treat it as 'false'.
+
+    `includemedicationnotes [boolean]` - Must be 'true' or 'false'. If it is not provided, treat it as 'false'.
 
    **Conditional:**
 
@@ -141,7 +146,32 @@
         }
       ]
     }
-    ```    
+    ```
+    when `currentstatus` or `studcode` is supplied and `includemedicationnotes` is supplied as 'true'
+    ```javascript
+    {
+      "data": [
+        {
+            "studcode":"0009158",
+            "medconditions":[
+                {
+                    "last_occ_date":"2021-12-03 00:00:00.0",
+                    "mcond_desc": "Migraine",
+                    "general_note": "James is prone to Migraines, generally introduced by sweet items or high level of stress.",
+                    "mcond_code": "MIG",
+                    "severe_ind": "Y",
+                    "medication_notes": [
+                        {
+                            "note_date": "2021-12-28",
+                            "note_text": "Needs to have the Neurofen as soon as symtoms start otherwise chances of getting severe migraines is likely."
+                        }
+                    ]
+                }
+            ]
+        }
+      ]
+    }
+    ```   
  
 * **Error Response:**
 
@@ -168,6 +198,11 @@
     `includemedication` does not match 'true' or 'fasle'
     ```javascript
       "error": "[includemedication] must be 'true' or 'false'."
+    ```  
+
+    `includemedicationnotes` does not match 'true' or 'fasle'
+    ```javascript
+      "error": "[includemedicationnotes] must be 'true' or 'false'."
     ```    
 
 * **Sample Parameters:**
@@ -192,7 +227,15 @@
       "currentstatus":"current"
       ,"includemedication":"true"
     }
-  ```  
+  ```
+
+    when `currentstatus` or `studcode` supplied and `includemedicationnotes` is supplied
+  ```javascript
+    {
+      "currentstatus":"current"
+      ,"includemedicationnotes":"true"
+    }
+  ```   
 
 * **Sample GET:** (With URL Encoded `token`)
 
